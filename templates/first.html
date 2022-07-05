@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>First</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+    <h1>MDB BOOTSTRAP </h1>
+    {% block body_block %}
+    <h4>WELCOME TO MY FIRST PAGE</h4>
+    {% endblock body_block %}
+    <button type="button" class="btn btn-primary">Primary</button>
+    
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
